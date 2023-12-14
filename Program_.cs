@@ -340,11 +340,11 @@ namespace ConsoleApp5
                     Console.WriteLine("강화에 실패하셨습니다.");
                 }
             }
-            else if (force > 3 && force <= 5)
+            else if (force > 3 && force <= 6)
             {
                 if (random > 30)//강화 성공 확률
                 {
-                    if (force == 5) { damage ++; }
+                    if (force == 6) { damage ++; }
                     force++;
                     durability++;
                     print_strengthen_success();
@@ -357,7 +357,7 @@ namespace ConsoleApp5
                     Console.Clear();
                     Console.WriteLine("강화에 실패하셨습니다.");
                 }
-            }else if(force > 5 && force <= 10)
+            }else if(force > 6 && force <= 10)
             {
                 if (random > 50)//강화 성공 확률
                 {
@@ -369,7 +369,7 @@ namespace ConsoleApp5
                 }
                 else if (random <= 50)//강화 실패 확률
                 {
-                    if (force == 6) { damage--; }
+                    if (force == 7) { damage--; }
                     force--;
                     Console.Clear();
                     Console.WriteLine("강화에 실패하셨습니다.");
