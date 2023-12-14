@@ -145,7 +145,18 @@ namespace ConsoleApp5
 
         static void rule()
         {
-            
+            Console.Clear();
+            Console.WriteLine("플레이어는 내구도 5, 강화 0강짜리 검과 5골드를 가진 채로 게임을 시작합니다.\n");
+            Console.WriteLine("검 강화와 몬스터 공격 중 하나의 행동을 계속 고를 수 있습니다.\n");
+            Console.WriteLine("검의 내구도가 다 닳으면 게임 오버입니다.\n");
+            Console.WriteLine("보스 몬스터의 체력을 다 깎으면 게임 클리어입니다.\n\n");
+            Console.WriteLine("시작하려면 아무 키나 입력하세요.");
+
+            String go = Console.ReadLine();
+            if (go != "")
+            {
+                Game();
+            }
         }
     }
 
